@@ -1,0 +1,8 @@
+C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\bin\x86\Debug\Content\Assets\splash_placeholder.xnb
+C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\bin\x86\Debug\Content\Assets\title_placeholder.xnb
+C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\bin\x86\Debug\Constantine.exe
+C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\bin\x86\Debug\Constantine.pdb
+C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\obj\x86\Debug\Constantine.exe
+C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\obj\x86\Debug\Constantine.pdb
+C:\Users\Justin\Documents\Visual Studio 2013\Projects\Constantine\Constantine\Constantine\obj\x86\Debug\Constantine.csprojResolveAssemblyReference.cache

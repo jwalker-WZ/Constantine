@@ -11,6 +11,16 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Constantine
 {
+    public enum GameState
+    {
+        Splash,
+        Menu,
+        Playing,
+        GameOver,
+        End
+    }
+
+
     /// <summary>
     /// This is the main type for your game
     /// </summary>
@@ -18,7 +28,11 @@ namespace Constantine
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Texture2D splashScreen;
+        Texture2D menuScreen;
 
+        public GameState CurrentGameState { get; set; }
+        
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -34,7 +48,7 @@ namespace Constantine
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            Window.Title = "Constantine V. 0.01";
             base.Initialize();
         }
 
@@ -46,6 +60,9 @@ namespace Constantine
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            splashScreen = this.Content.Load<Texture2D>(@"Assets/splash_placeholder");
+            menuScreen = this.Content.Load<Texture2D>(@"Assets/title_placeholder");
+            CurrentGameState = GameState.Splash;
 
             // TODO: use this.Content to load your game content here
         }
@@ -71,6 +88,16 @@ namespace Constantine
                 this.Exit();
 
             // TODO: Add your update logic here
+            switch (CurrentGameState)
+            {
+                case GameState.Splash:
+                    if (gameTime.TotalGameTime.TotalSeconds > 2)
+                    {
+                        CurrentGameState = GameState.Menu;
+                    }
+                    break;
+                    
+            }
 
             base.Update(gameTime);
         }
@@ -84,8 +111,19 @@ namespace Constantine
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
-
+            spriteBatch.Begin();
+            switch (CurrentGameState)
+            {
+                case GameState.Splash:
+                    spriteBatch.Draw(splashScreen, Vector2.Zero, Color.White);
+                    break;
+                case GameState.Menu:
+                    spriteBatch.Draw(menuScreen, Vector2.Zero, Color.White);
+                    break;
+            }
             base.Draw(gameTime);
+
+            spriteBatch.End();
         }
     }
 }
