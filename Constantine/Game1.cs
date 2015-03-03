@@ -26,16 +26,26 @@ namespace Constantine
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
+
+        const int SCREEN_WIDTH = 1024;
+        const int SCREEN_HEIGHT = 768;
+
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Texture2D splashScreen;
         Texture2D menuScreen;
+
+        Song menuMusic;
+        bool isMusicPlaying;
 
         public GameState CurrentGameState { get; set; }
         
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
+            graphics.PreferredBackBufferHeight = SCREEN_HEIGHT;
+            graphics.PreferredBackBufferWidth = SCREEN_WIDTH;
+            
             Content.RootDirectory = "Content";
         }
 
@@ -49,6 +59,9 @@ namespace Constantine
         {
             // TODO: Add your initialization logic here
             Window.Title = "Constantine V. 0.01";
+            isMusicPlaying = false;
+            this.IsMouseVisible = true;
+
             base.Initialize();
         }
 
@@ -60,8 +73,12 @@ namespace Constantine
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            splashScreen = this.Content.Load<Texture2D>(@"Assets/splash_placeholder");
-            menuScreen = this.Content.Load<Texture2D>(@"Assets/title_placeholder");
+            splashScreen = this.Content.Load<Texture2D>(@"Assets/Images/splash");
+            menuScreen = this.Content.Load<Texture2D>(@"Assets/Images/menu");
+
+            menuMusic = this.Content.Load<Song>(@"Assets/Sounds/Dystopia");
+            MediaPlayer.IsRepeating = true;
+
             CurrentGameState = GameState.Splash;
 
             // TODO: use this.Content to load your game content here
@@ -94,6 +111,13 @@ namespace Constantine
                     if (gameTime.TotalGameTime.TotalSeconds > 2)
                     {
                         CurrentGameState = GameState.Menu;
+                    }
+                    break;
+                case GameState.Menu:
+                    if (!isMusicPlaying)
+                    {
+                        MediaPlayer.Play(menuMusic);
+                        isMusicPlaying = true;
                     }
                     break;
                     

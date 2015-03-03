@@ -2,22 +2,32 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>Assets\splash_placeholder.png</Source>
-      <Name>Assets\splash_placeholder</Name>
+      <Source>Assets\Images\menu.png</Source>
+      <Name>Assets\Images\menu</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\bin\x86\Debug\Content\Assets\splash_placeholder.xnb</Output>
-      <Time>2015-03-01T22:43:46.0331189-06:00</Time>
+      <Output>C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\bin\x86\Debug\Content\Assets\Images\menu.xnb</Output>
+      <Time>2015-03-02T22:40:28.870571-06:00</Time>
     </Item>
     <Item>
-      <Source>Assets\title_placeholder.png</Source>
-      <Name>Assets\title_placeholder</Name>
+      <Source>Assets\Sounds\Dystopia.mp3</Source>
+      <Name>Assets\Sounds\Dystopia</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\bin\x86\Debug\Content\Assets\Sounds\Dystopia.xnb</Output>
+      <Extra>C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\bin\x86\Debug\Content\Assets\Sounds\Dystopia.wma</Extra>
+      <Time>2015-03-02T22:55:27.4512709-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Images\splash.png</Source>
+      <Name>Assets\Images\splash</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\bin\x86\Debug\Content\Assets\title_placeholder.xnb</Output>
-      <Time>2015-03-01T22:43:57.813578-06:00</Time>
+      <Output>C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\bin\x86\Debug\Content\Assets\Images\splash.xnb</Output>
+      <Time>2015-03-02T23:38:29.1446431-06:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
