@@ -29,6 +29,24 @@
       <Output>C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\bin\x86\Debug\Content\Assets\Images\splash.xnb</Output>
       <Time>2015-03-02T23:38:29.1446431-06:00</Time>
     </Item>
+    <Item>
+      <Source>Assets\Images\angel_placeholder.png</Source>
+      <Name>Assets\Images\angel_placeholder</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\bin\x86\Debug\Content\Assets\Images\angel_placeholder.xnb</Output>
+      <Time>2015-03-04T01:00:21.2778856-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Assets\Images\player_placeholder.png</Source>
+      <Name>Assets\Images\player_placeholder</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\bin\x86\Debug\Content\Assets\Images\player_placeholder.xnb</Output>
+      <Time>2015-03-04T01:00:28.1013776-06:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{7D180B67-94EE-4197-AE4E-89880AADDD95}</ContentProjectGUID>

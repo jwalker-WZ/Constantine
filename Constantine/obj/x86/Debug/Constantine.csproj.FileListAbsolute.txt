@@ -8,3 +8,5 @@ C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Co
 C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\bin\x86\Debug\Content\Assets\Sounds\Dystopia.xnb
 C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\bin\x86\Debug\Content\Assets\Sounds\Dystopia.wma
 C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\bin\x86\Debug\Content\Assets\Images\splash.xnb
+C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\bin\x86\Debug\Content\Assets\Images\angel_placeholder.xnb
+C:\Users\Justin\documents\visual studio 2013\Projects\Constantine\Constantine\Constantine\bin\x86\Debug\Content\Assets\Images\player_placeholder.xnb

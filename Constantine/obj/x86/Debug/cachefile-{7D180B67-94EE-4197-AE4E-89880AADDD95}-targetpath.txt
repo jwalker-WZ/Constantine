@@ -2,3 +2,5 @@ Content\Assets\Images\menu.xnb
 Content\Assets\Sounds\Dystopia.xnb
 Content\Assets\Sounds\Dystopia.wma
 Content\Assets\Images\splash.xnb
+Content\Assets\Images\angel_placeholder.xnb
+Content\Assets\Images\player_placeholder.xnb
